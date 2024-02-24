@@ -317,10 +317,10 @@
 .fa-tags:before {
   content: "\f02c";
 }
-.fa-book:before {
+.fa-buking:before {
   content: "\f02d";
 }
-.fa-bookmark:before {
+.fa-bukingmark:before {
   content: "\f02e";
 }
 .fa-print:before {
@@ -561,7 +561,7 @@
 .fa-twitter-square:before {
   content: "\f081";
 }
-.fa-facebook-square:before {
+.fa-facebuking-square:before {
   content: "\f082";
 }
 .fa-camera-retro:before {
@@ -622,7 +622,7 @@
 .fa-square-o:before {
   content: "\f096";
 }
-.fa-bookmark-o:before {
+.fa-bukingmark-o:before {
   content: "\f097";
 }
 .fa-phone-square:before {
@@ -631,7 +631,7 @@
 .fa-twitter:before {
   content: "\f099";
 }
-.fa-facebook:before {
+.fa-facebuking:before {
   content: "\f09a";
 }
 .fa-github:before {

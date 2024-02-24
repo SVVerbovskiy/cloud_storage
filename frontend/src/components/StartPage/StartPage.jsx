@@ -26,8 +26,8 @@ function StartPage() {
             <h1 className="start-page--welcome--title">Загружайте, скачивайте и управляйте своими файлами.</h1>
             <h2 className="start-page--welcome--subtitle">Попробуйте новое хранилище файлов.</h2>
             <div className="start-page--welcome--content">
-              BukingCloud is a new simple file storage.
-              You can keep and manage your files here. Try it right now!
+            BukingCloud - это новое простое хранилище файлов.
+            Здесь вы можете хранить и управлять своими файлами. Попробуйте прямо сейчас!
             </div>
             <button className="sing-up-button" onClick={onClickHandler} type="button">Начать</button>
           </div>
