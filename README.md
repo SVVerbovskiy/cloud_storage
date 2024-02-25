@@ -1,6 +1,6 @@
 # Дипломный проект профессии «Fullstack-разработчик на Python»
 
-## ☁️ Облачное хранилище «BukingCloud»
+## ☁️ Облачное хранилище «bookingCloud»
 
 http://79.174.94.46/
 
@@ -136,7 +136,7 @@ WorkingDirectory=/home/<unix_username>/cloud_storage
 ExecStart=/home/<unix_username>/cloud_storage/env/bin/gunicorn \
     --access-logfile - \
     --workers=3 \
-    --bind unix:/home/<unix_username>/cloud_storage/buking_cloud/gunicorn.sock buking_cloud.wsgi:application
+    --bind unix:/home/<unix_username>/cloud_storage/booking_cloud/gunicorn.sock booking_cloud.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
@@ -162,7 +162,7 @@ server {
                 
 	location / {
         include proxy_params;
-        proxy_pass http://unix:/home/<unix_username>/cloud_storage/buking_cloud/gunicorn.sock;
+        proxy_pass http://unix:/home/<unix_username>/cloud_storage/booking_cloud/gunicorn.sock;
     }
 	
 }
@@ -233,7 +233,7 @@ npm run dev
 ## Структура проекта
 Проект основан на Django и включает в себя два приложения:
 
-* BukingCloud - бэкенд часть проекта, реализованная на django rest framework
+* bookingCloud - бэкенд часть проекта, реализованная на django rest framework
 * frontend - фронтенд часть проекта, которая реализована на react
 
 Связь фронденда с бекендом осуществляется через шаблон django, находящийся в директории `frontend/templates/frontend/index.html`.
