@@ -115,6 +115,26 @@ $ source ./env/bin/activate
 (env) $ pip install -r requirements.txt
 (env) $ python manage.py makemigrations cloud
 (env) $ python manage.py migrate
+```
+### Фронтенд
+
+- Обновим Node
+```
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+```
+- В директории `frontend/` установим NPM зависимости.
+```
+npm install
+```
+- В файле `frontend/src/api/requests.js` в переменной `BASE_URL` установим url, на который будут отправлятся запросы на сервер. Например: `http://127.0.0.1:8000/api/`
+После этого пересоберем бандл фронтенда
+```
+npm run dev
+```
+- Себерем static файлы и запустим наш проект
+```
 (env) $ python manage.py collectstatic
 (env) $ python manage.py runserver 0.0.0.0:8000
 ```
@@ -130,7 +150,7 @@ Description=gunicorn.service
 After=network.target
 
 [Service]
-User=dima
+User=root
 Group=www-data
 WorkingDirectory=/home/<unix_username>/cloud_storage
 ExecStart=/home/<unix_username>/cloud_storage/env/bin/gunicorn \
@@ -154,7 +174,7 @@ WantedBy=multi-user.target
 ```
 server {
 	listen 80;
-	server_name 79.174.94.46;
+	server_name <server_IP>;
 
 	location /static/ {
 		root /home/<unix_username>/cloud_storage;
@@ -209,24 +229,6 @@ user <unix_username>
 ```
 (env) $ exit
 ```
-### Фронтенд
-
-- Обновим Node
-```
-sudo npm cache clean -f
-sudo npm install -g n
-sodo n stable
-```
-- В директории `frontend/` установим NPM зависимости.
-```
-npm install
-```
-- В файле `frontend/src/api/requests.js` в переменной `BASE_URL` установим url, на который будут отправлятся запросы на сервер. Например: `http://127.0.0.1:8000/api/`
-После этого пересоберем бандл фронтенда
-```
-npm run dev
-```
-
 Теперь проект Django + React должен быть полностью доступен по http://<IP сервера> на обычном порту 80.
 
 
