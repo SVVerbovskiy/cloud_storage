@@ -5,7 +5,7 @@ from rest_framework.decorators import api_view, permission_classes
 from django.http import FileResponse
 from datetime import date
 
-from buking_cloud.cloud.models import FileModel
+from booking_cloud.cloud.models import FileModel
 
 
 @api_view(['GET'])

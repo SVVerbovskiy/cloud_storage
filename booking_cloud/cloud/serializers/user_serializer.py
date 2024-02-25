@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from buking_cloud.cloud.models import User
+from booking_cloud.cloud.models import User
 
 
 class RegistrUserSerializer(serializers.ModelSerializer):

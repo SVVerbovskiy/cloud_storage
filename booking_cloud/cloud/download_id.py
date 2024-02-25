@@ -1,4 +1,4 @@
-from buking_cloud.cloud.random_string import get_random_string
+from booking_cloud.cloud.random_string import get_random_string
 
 
 def generate_download_id(l):

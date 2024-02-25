@@ -1,10 +1,10 @@
 from django.core.files import File
 from rest_framework import serializers
 
-from buking_cloud.cloud.models import FileModel, User
-from buking_cloud.cloud.storage_file_name import generate_storage_file_name
-from buking_cloud.cloud.download_id import generate_download_id
-from buking_cloud.cloud.validators import patchValidator
+from booking_cloud.cloud.models import FileModel, User
+from booking_cloud.cloud.storage_file_name import generate_storage_file_name
+from booking_cloud.cloud.download_id import generate_download_id
+from booking_cloud.cloud.validators import patchValidator
 
 
 class FileSerializer(serializers.ModelSerializer):

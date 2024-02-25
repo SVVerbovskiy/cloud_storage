@@ -1,8 +1,8 @@
 from django.urls import path, include
-from buking_cloud.cloud.views.user_view import RegistrUserView, get_detail_user_list, delete_user
-from buking_cloud.cloud.views.file_views import FileView
-from buking_cloud.cloud.views.auth_view import login_view, get_csrf_token, me_view, logout_view
-from buking_cloud.cloud.views.file_transfer_view import get_link, get_file
+from booking_cloud.cloud.views.user_view import RegistrUserView, get_detail_user_list, delete_user
+from booking_cloud.cloud.views.file_views import FileView
+from booking_cloud.cloud.views.auth_view import login_view, get_csrf_token, me_view, logout_view
+from booking_cloud.cloud.views.file_transfer_view import get_link, get_file
 
 urlpatterns = [
     path('api/auth/login/', login_view),

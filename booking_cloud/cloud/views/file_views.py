@@ -5,8 +5,8 @@ from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
 from datetime import date
 
-from buking_cloud.cloud.serializers.file_serializer import FileSerializer
-from buking_cloud.cloud.models import FileModel
+from booking_cloud.cloud.serializers.file_serializer import FileSerializer
+from booking_cloud.cloud.models import FileModel
 from ..models import file_system
 
 

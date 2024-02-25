@@ -1,4 +1,4 @@
-from buking_cloud.cloud.models import file_system
+from booking_cloud.cloud.models import file_system
 
 def get_ext(file_name):
     return file_name.split('.')[-1]
